@@ -112,7 +112,7 @@ static const BRChainParams BRMainNetParams = {
     BRMainNetDNSSeeds,
     5817,                  // standardPort
     0xb5a2f1b4,            // magicNumber
-    SERVICES_NODE_WITNESS, // services
+    0,                     // services
     BRMainNetVerifyDifficulty,
     BRMainNetCheckpoints,
     sizeof(BRMainNetCheckpoints)/sizeof(*BRMainNetCheckpoints)
@@ -122,7 +122,7 @@ static const BRChainParams BRTestNetParams = {
     BRTestNetDNSSeeds,
     15817,                 // standardPort
     0xe1e2e3e7,            // magicNumber
-    SERVICES_NODE_WITNESS, // services
+    0,                     // services
     BRTestNetVerifyDifficulty,
     BRTestNetCheckpoints,
     sizeof(BRTestNetCheckpoints)/sizeof(*BRTestNetCheckpoints)

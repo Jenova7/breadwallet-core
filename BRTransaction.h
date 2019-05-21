@@ -83,6 +83,7 @@ typedef struct {
     UInt256 txHash;
     UInt256 wtxHash;
     uint32_t version;
+    unsigned int nTime;
     BRTxInput *inputs;
     size_t inCount;
     BRTxOutput *outputs;

@@ -501,11 +501,6 @@ static int _BRPeerAcceptHeadersMessage(BRPeer *peer, const uint8_t *msg, size_t 
                     peer_log(peer, "malformed headers message with length: %zu", msgLen);
                     r = 0;
                 }
-                else if (! BRMerkleBlockIsValid(block, (uint32_t)now)) {
-                    peer_log(peer, "invalid block header: %s", u256hex(block->blockHash));
-                    BRMerkleBlockFree(block);
-                    r = 0;
-                }
                 else if (ctx->relayedBlock) {
                     ctx->relayedBlock(ctx->info, block);
                 }
@@ -719,12 +714,6 @@ static int _BRPeerAcceptMerkleblockMessage(BRPeer *peer, const uint8_t *msg, siz
   
     if (! block) {
         peer_log(peer, "malformed merkleblock message with length: %zu", msgLen);
-        r = 0;
-    }
-    else if (! BRMerkleBlockIsValid(block, (uint32_t)time(NULL))) {
-        peer_log(peer, "invalid merkleblock: %s", u256hex(block->blockHash));
-        BRMerkleBlockFree(block);
-        block = NULL;
         r = 0;
     }
     else if (! ctx->sentFilter && ! ctx->sentGetdata) {

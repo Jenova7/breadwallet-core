@@ -134,8 +134,12 @@ BRMerkleBlock *BRMerkleBlockParse(const uint8_t *buf, size_t bufLen)
             block->flags = (off + len <= bufLen) ? malloc(len) : NULL;
             if (block->flags) memcpy(block->flags, &buf[off], len);
         }
-        
-        BRSHA256_2(&block->blockHash, buf, 80);
+
+        if (block->version <= 6) {
+            BRNist5(&block->blockHash, buf);
+        } else {
+            BRSHA256_2(&block->blockHash, buf, 80);
+        }
     }
     
     return block;

@@ -409,7 +409,7 @@ BRTransaction *BRTransactionParse(const uint8_t *buf, size_t bufLen)
     off += sizeof(uint32_t);
     if (tx->version < 7) {
         tx->nTime = (unsigned int)&buf[off];
-        off += sizeof(unsigned int);
+        off += 4;
     }
     tx->inCount = (size_t)BRVarInt(&buf[off], (off <= bufLen ? bufLen - off : 0), &len);
     off += len;

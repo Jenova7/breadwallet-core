@@ -142,7 +142,7 @@ BRMerkleBlock *BRMerkleBlockParse(const uint8_t *buf, size_t bufLen)
         }
 
         if (block->version <= 6) {
-            BRNist5(&block->blockHash, buf);
+            BRNist5(buf, &block->blockHash);
         } else {
             BRSHA256_2(&block->blockHash, buf, block->version > 9 ? 112 : 80);
         }

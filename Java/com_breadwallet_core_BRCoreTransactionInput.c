@@ -67,15 +67,6 @@ JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransactionInput_createT
              : (*env)->GetByteArrayElements(env, signatureByteArray, 0));
     BRTxInputSetSignature(input, signature, signatureLen);
 
-    // witness
-    input->witness = NULL;
-    size_t witnessLen = (size_t) (*env)->GetArrayLength(env, witnessByteArray);
-    const uint8_t *witness = (const uint8_t *)
-            (0 == witnessLen
-             ? NULL
-             : (*env)->GetByteArrayElements(env, witnessByteArray, 0));
-    BRTxInputSetWitness(input, witness, witnessLen);
-
     input->sequence = (uint32_t) (sequence == -1 ? TXIN_SEQUENCE : sequence);
 
     return (jlong) input;

@@ -22,24 +22,24 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.breadwallet.core.test;
+package com.electraproject.core.test;
 
-import com.breadwallet.core.BRCoreAddress;
-import com.breadwallet.core.BRCoreChainParams;
-import com.breadwallet.core.BRCoreKey;
-import com.breadwallet.core.BRCoreMasterPubKey;
-import com.breadwallet.core.BRCoreMerkleBlock;
-import com.breadwallet.core.BRCorePaymentProtocolACK;
-import com.breadwallet.core.BRCorePaymentProtocolInvoiceRequest;
-import com.breadwallet.core.BRCorePaymentProtocolMessage;
-import com.breadwallet.core.BRCorePaymentProtocolRequest;
-import com.breadwallet.core.BRCorePeer;
-import com.breadwallet.core.BRCorePeerManager;
-import com.breadwallet.core.BRCoreTransaction;
-import com.breadwallet.core.BRCoreTransactionInput;
-import com.breadwallet.core.BRCoreTransactionOutput;
-import com.breadwallet.core.BRCoreWallet;
-import com.breadwallet.core.BRCoreWalletManager;
+import com.electraproject.core.BRCoreAddress;
+import com.electraproject.core.BRCoreChainParams;
+import com.electraproject.core.BRCoreKey;
+import com.electraproject.core.BRCoreMasterPubKey;
+import com.electraproject.core.BRCoreMerkleBlock;
+import com.electraproject.core.BRCorePaymentProtocolACK;
+import com.electraproject.core.BRCorePaymentProtocolInvoiceRequest;
+import com.electraproject.core.BRCorePaymentProtocolMessage;
+import com.electraproject.core.BRCorePaymentProtocolRequest;
+import com.electraproject.core.BRCorePeer;
+import com.electraproject.core.BRCorePeerManager;
+import com.electraproject.core.BRCoreTransaction;
+import com.electraproject.core.BRCoreTransactionInput;
+import com.electraproject.core.BRCoreTransactionOutput;
+import com.electraproject.core.BRCoreWallet;
+import com.electraproject.core.BRCoreWalletManager;
 
 import java.security.SecureRandom;
 import java.util.Arrays;

@@ -23,7 +23,7 @@
  * THE SOFTWARE.
  */
 
-package com.breadwallet.core;
+package com.electraproject.core;
 
 
 import java.util.Arrays;

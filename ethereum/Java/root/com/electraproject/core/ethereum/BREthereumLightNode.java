@@ -22,15 +22,15 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.breadwallet.core.ethereum;
+package com.electraproject.core.ethereum;
 
-import com.breadwallet.core.BRCoreJniReference;
+import com.electraproject.core.BRCoreJniReference;
 import java.lang.ref.WeakReference;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.breadwallet.core.ethereum.BREthereumToken.jniGetTokenBRD;
-import static com.breadwallet.core.ethereum.BREthereumToken.jniTokenAll;
+import static com.electraproject.core.ethereum.BREthereumToken.jniGetTokenBRD;
+import static com.electraproject.core.ethereum.BREthereumToken.jniTokenAll;
 
 /**
  *

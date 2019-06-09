@@ -22,10 +22,10 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.breadwallet.core.ethereum;
+package com.electraproject.core.ethereum;
 
 
-import com.breadwallet.core.BRCoreJniReference;
+import com.electraproject.core.BRCoreJniReference;
 
 import java.util.HashMap;
 

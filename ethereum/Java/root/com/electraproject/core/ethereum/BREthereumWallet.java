@@ -22,9 +22,9 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.breadwallet.core.ethereum;
+package com.electraproject.core.ethereum;
 
-import com.breadwallet.core.ethereum.BREthereumAmount.Unit;
+import com.electraproject.core.ethereum.BREthereumAmount.Unit;
 
 import java.math.BigDecimal;
 import java.util.LinkedList;

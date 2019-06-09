@@ -22,7 +22,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.breadwallet.core.ethereum;
+package com.electraproject.core.ethereum;
 
 
 public class BREthereumBlock extends BREthereumLightNode.Reference {

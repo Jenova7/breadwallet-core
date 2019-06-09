@@ -65,7 +65,7 @@ static jmethodID transactionConstructor;
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    createJniCoreWallet
- * Signature: ([Lcom/breadwallet/core/BRCoreTransaction;Lcom/breadwallet/core/BRCoreMasterPubKey;I)J
+ * Signature: ([Lcom/electraproject/core/BRCoreTransaction;Lcom/electraproject/core/BRCoreMasterPubKey;I)J
  */
 JNIEXPORT jlong JNICALL
 Java_com_electraproject_core_BRCoreWallet_createJniCoreWallet
@@ -97,7 +97,7 @@ Java_com_electraproject_core_BRCoreWallet_createJniCoreWallet
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    installListener
- * Signature: (Lcom/breadwallet/core/BRCoreWallet/Listener;)V
+ * Signature: (Lcom/electraproject/core/BRCoreWallet/Listener;)V
  */
 JNIEXPORT void JNICALL Java_com_electraproject_core_BRCoreWallet_installListener
         (JNIEnv *env, jobject thisObject, jobject listenerObject) {
@@ -119,7 +119,7 @@ JNIEXPORT void JNICALL Java_com_electraproject_core_BRCoreWallet_installListener
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    getReceiveAddress
- * Signature: ()Lcom/breadwallet/core/BRCoreAddress;
+ * Signature: ()Lcom/electraproject/core/BRCoreAddress;
  */
 JNIEXPORT jobject JNICALL
 Java_com_electraproject_core_BRCoreWallet_getReceiveAddress
@@ -135,7 +135,7 @@ Java_com_electraproject_core_BRCoreWallet_getReceiveAddress
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    getLegacyAddress
- * Signature: ()Lcom/breadwallet/core/BRCoreAddress;
+ * Signature: ()Lcom/electraproject/core/BRCoreAddress;
  */
 JNIEXPORT jobject JNICALL Java_com_electraproject_core_BRCoreWallet_getLegacyAddress
         (JNIEnv *env, jobject thisObject) {
@@ -150,7 +150,7 @@ JNIEXPORT jobject JNICALL Java_com_electraproject_core_BRCoreWallet_getLegacyAdd
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    getAllAddresses
- * Signature: ()[Lcom/breadwallet/core/BRCoreAddress;
+ * Signature: ()[Lcom/electraproject/core/BRCoreAddress;
  */
 JNIEXPORT jobjectArray JNICALL
 Java_com_electraproject_core_BRCoreWallet_getAllAddresses
@@ -185,7 +185,7 @@ Java_com_electraproject_core_BRCoreWallet_getAllAddresses
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    containsAddress
- * Signature: (Lcom/breadwallet/core/BRCoreAddress;)Z
+ * Signature: (Lcom/electraproject/core/BRCoreAddress;)Z
  */
 JNIEXPORT jboolean JNICALL
 Java_com_electraproject_core_BRCoreWallet_containsAddress
@@ -199,7 +199,7 @@ Java_com_electraproject_core_BRCoreWallet_containsAddress
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    addressIsUsed
- * Signature: (Lcom/breadwallet/core/BRCoreAddress;)Z
+ * Signature: (Lcom/electraproject/core/BRCoreAddress;)Z
  */
 JNIEXPORT jboolean JNICALL
 Java_com_electraproject_core_BRCoreWallet_addressIsUsed
@@ -213,7 +213,7 @@ Java_com_electraproject_core_BRCoreWallet_addressIsUsed
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    jniGetTransactions
- * Signature: ()[Lcom/breadwallet/core/BRCoreTransaction;
+ * Signature: ()[Lcom/electraproject/core/BRCoreTransaction;
  */
 JNIEXPORT jobjectArray JNICALL
 Java_com_electraproject_core_BRCoreWallet_jniGetTransactions
@@ -246,7 +246,7 @@ Java_com_electraproject_core_BRCoreWallet_jniGetTransactions
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    getTransactionsConfirmedBefore
- * Signature: (J)[Lcom/breadwallet/core/BRCoreTransaction;
+ * Signature: (J)[Lcom/electraproject/core/BRCoreTransaction;
  */
 JNIEXPORT jobjectArray JNICALL
 Java_com_electraproject_core_BRCoreWallet_getTransactionsConfirmedBefore
@@ -356,7 +356,7 @@ JNIEXPORT jlong JNICALL Java_com_electraproject_core_BRCoreWallet_getDefaultFeeP
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    createTransaction
- * Signature: (JLcom/breadwallet/core/BRCoreAddress;)Lcom/breadwallet/core/BRCoreTransaction;
+ * Signature: (JLcom/electraproject/core/BRCoreAddress;)Lcom/electraproject/core/BRCoreTransaction;
  */
 JNIEXPORT jobject JNICALL
 Java_com_electraproject_core_BRCoreWallet_createTransaction
@@ -378,7 +378,7 @@ Java_com_electraproject_core_BRCoreWallet_createTransaction
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    createTransactionForOutputs
- * Signature: ([Lcom/breadwallet/core/BRCoreTransactionOutput;)Lcom/breadwallet/core/BRCoreTransaction;
+ * Signature: ([Lcom/electraproject/core/BRCoreTransactionOutput;)Lcom/electraproject/core/BRCoreTransaction;
  */
 JNIEXPORT jobject JNICALL Java_com_electraproject_core_BRCoreWallet_createTransactionForOutputs
         (JNIEnv *env, jobject thisObject, jobjectArray outputsArray) {
@@ -407,7 +407,7 @@ JNIEXPORT jobject JNICALL Java_com_electraproject_core_BRCoreWallet_createTransa
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    signTransaction
- * Signature: (Lcom/breadwallet/core/BRCoreTransaction;[B)Z
+ * Signature: (Lcom/electraproject/core/BRCoreTransaction;[B)Z
  */
 JNIEXPORT jboolean JNICALL
 Java_com_electraproject_core_BRCoreWallet_signTransaction
@@ -438,7 +438,7 @@ Java_com_electraproject_core_BRCoreWallet_signTransaction
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    containsTransaction
- * Signature: (Lcom/breadwallet/core/BRCoreTransaction;)Z
+ * Signature: (Lcom/electraproject/core/BRCoreTransaction;)Z
  */
 JNIEXPORT jboolean JNICALL
 Java_com_electraproject_core_BRCoreWallet_containsTransaction
@@ -451,7 +451,7 @@ Java_com_electraproject_core_BRCoreWallet_containsTransaction
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    jniRegisterTransaction
- * Signature: (Lcom/breadwallet/core/BRCoreTransaction;)Z
+ * Signature: (Lcom/electraproject/core/BRCoreTransaction;)Z
  */
 JNIEXPORT jboolean JNICALL
 Java_com_electraproject_core_BRCoreWallet_jniRegisterTransaction
@@ -507,7 +507,7 @@ Java_com_electraproject_core_BRCoreWallet_updateTransactions
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    jniTransactionForHash
- * Signature: ([B)Lcom/breadwallet/core/BRCoreTransaction;
+ * Signature: ([B)Lcom/electraproject/core/BRCoreTransaction;
  */
 JNIEXPORT jobject JNICALL
 Java_com_electraproject_core_BRCoreWallet_jniTransactionForHash
@@ -523,7 +523,7 @@ Java_com_electraproject_core_BRCoreWallet_jniTransactionForHash
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    transactionIsValid
- * Signature: (Lcom/breadwallet/core/BRCoreTransaction;)I
+ * Signature: (Lcom/electraproject/core/BRCoreTransaction;)I
  */
 JNIEXPORT jboolean JNICALL
 Java_com_electraproject_core_BRCoreWallet_transactionIsValid
@@ -536,7 +536,7 @@ Java_com_electraproject_core_BRCoreWallet_transactionIsValid
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    transactionIsPending
- * Signature: (Lcom/breadwallet/core/BRCoreTransaction;)I
+ * Signature: (Lcom/electraproject/core/BRCoreTransaction;)I
  */
 JNIEXPORT jboolean JNICALL
 Java_com_electraproject_core_BRCoreWallet_transactionIsPending
@@ -549,7 +549,7 @@ Java_com_electraproject_core_BRCoreWallet_transactionIsPending
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    transactionIsVerified
- * Signature: (Lcom/breadwallet/core/BRCoreTransaction;)I
+ * Signature: (Lcom/electraproject/core/BRCoreTransaction;)I
  */
 JNIEXPORT jboolean JNICALL
 Java_com_electraproject_core_BRCoreWallet_transactionIsVerified
@@ -563,7 +563,7 @@ Java_com_electraproject_core_BRCoreWallet_transactionIsVerified
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    transactionFee
- * Signature: (Lcom/breadwallet/core/BRCoreTransaction;)J
+ * Signature: (Lcom/electraproject/core/BRCoreTransaction;)J
  */
 JNIEXPORT jlong JNICALL
 Java_com_electraproject_core_BRCoreWallet_getTransactionFee
@@ -576,7 +576,7 @@ Java_com_electraproject_core_BRCoreWallet_getTransactionFee
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    transactionAmountSent
- * Signature: (Lcom/breadwallet/core/BRCoreTransaction;)J
+ * Signature: (Lcom/electraproject/core/BRCoreTransaction;)J
  */
 JNIEXPORT jlong JNICALL
 Java_com_electraproject_core_BRCoreWallet_getTransactionAmountSent
@@ -589,7 +589,7 @@ Java_com_electraproject_core_BRCoreWallet_getTransactionAmountSent
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    transactionAmountReceived
- * Signature: (Lcom/breadwallet/core/BRCoreTransaction;)J
+ * Signature: (Lcom/electraproject/core/BRCoreTransaction;)J
  */
 JNIEXPORT jlong JNICALL
 Java_com_electraproject_core_BRCoreWallet_getTransactionAmountReceived
@@ -602,7 +602,7 @@ Java_com_electraproject_core_BRCoreWallet_getTransactionAmountReceived
 /*
  * Class:     com_breadwallet_core_BRCoreWallet
  * Method:    getBalanceAfterTransaction
- * Signature: (Lcom/breadwallet/core/BRCoreTransaction;)J
+ * Signature: (Lcom/electraproject/core/BRCoreTransaction;)J
  */
 JNIEXPORT jlong JNICALL
 Java_com_electraproject_core_BRCoreWallet_getBalanceAfterTransaction
@@ -682,14 +682,14 @@ Java_com_electraproject_core_BRCoreWallet_disposeNative
  */
 JNIEXPORT void JNICALL Java_com_electraproject_core_BRCoreWallet_initializeNative
         (JNIEnv *env, jclass thisClass) {
-    addressClass = (*env)->FindClass(env, "com/breadwallet/core/BRCoreAddress");
+    addressClass = (*env)->FindClass(env, "com/electraproject/core/BRCoreAddress");
     assert (NULL != addressClass);
     addressClass = (*env)->NewGlobalRef (env, addressClass);
 
     addressConstructor = (*env)->GetMethodID(env, addressClass, "<init>", "(J)V");
     assert (NULL != addressConstructor);
 
-    transactionClass = (*env)->FindClass (env, "com/breadwallet/core/BRCoreTransaction");
+    transactionClass = (*env)->FindClass (env, "com/electraproject/core/BRCoreTransaction");
     assert (NULL != transactionClass);
     transactionClass = (*env)->NewGlobalRef (env, transactionClass);
 
@@ -746,7 +746,7 @@ txAdded(void *info, BRTransaction *tx) {
     jmethodID listenerMethod =
             lookupListenerMethod(env, listener,
                                  "onTxAdded",
-                                 "(Lcom/breadwallet/core/BRCoreTransaction;)V");
+                                 "(Lcom/electraproject/core/BRCoreTransaction;)V");
     assert (NULL != listenerMethod);
 
     // Create the BRCoreTransaction

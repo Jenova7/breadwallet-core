@@ -122,7 +122,7 @@ JNIEXPORT jstring JNICALL Java_com_electraproject_core_BRCorePeerManager_getDown
 /*
  * Class:     com_breadwallet_core_BRCorePeerManager
  * Method:    publishTransactionWithListener
- * Signature: (Lcom/breadwallet/core/BRCoreTransaction;Lcom/breadwallet/core/BRCorePeerManager/Listener;)V
+ * Signature: (Lcom/electraproject/core/BRCoreTransaction;Lcom/electraproject/core/BRCorePeerManager/Listener;)V
  */
 JNIEXPORT void JNICALL Java_com_electraproject_core_BRCorePeerManager_publishTransactionWithListener
   (JNIEnv *, jobject, jobject, jobject);
@@ -138,7 +138,7 @@ JNIEXPORT jlong JNICALL Java_com_electraproject_core_BRCorePeerManager_getRelayC
 /*
  * Class:     com_breadwallet_core_BRCorePeerManager
  * Method:    testSaveBlocksCallback
- * Signature: (Z[Lcom/breadwallet/core/BRCoreMerkleBlock;)V
+ * Signature: (Z[Lcom/electraproject/core/BRCoreMerkleBlock;)V
  */
 JNIEXPORT void JNICALL Java_com_electraproject_core_BRCorePeerManager_testSaveBlocksCallback
   (JNIEnv *, jobject, jboolean, jobjectArray);
@@ -146,7 +146,7 @@ JNIEXPORT void JNICALL Java_com_electraproject_core_BRCorePeerManager_testSaveBl
 /*
  * Class:     com_breadwallet_core_BRCorePeerManager
  * Method:    testSavePeersCallback
- * Signature: (Z[Lcom/breadwallet/core/BRCorePeer;)V
+ * Signature: (Z[Lcom/electraproject/core/BRCorePeer;)V
  */
 JNIEXPORT void JNICALL Java_com_electraproject_core_BRCorePeerManager_testSavePeersCallback
   (JNIEnv *, jobject, jboolean, jobjectArray);
@@ -154,7 +154,7 @@ JNIEXPORT void JNICALL Java_com_electraproject_core_BRCorePeerManager_testSavePe
 /*
  * Class:     com_breadwallet_core_BRCorePeerManager
  * Method:    createCorePeerManager
- * Signature: (Lcom/breadwallet/core/BRCoreChainParams;Lcom/breadwallet/core/BRCoreWallet;D[Lcom/breadwallet/core/BRCoreMerkleBlock;[Lcom/breadwallet/core/BRCorePeer;)J
+ * Signature: (Lcom/electraproject/core/BRCoreChainParams;Lcom/electraproject/core/BRCoreWallet;D[Lcom/electraproject/core/BRCoreMerkleBlock;[Lcom/electraproject/core/BRCorePeer;)J
  */
 JNIEXPORT jlong JNICALL Java_com_electraproject_core_BRCorePeerManager_createCorePeerManager
   (JNIEnv *, jclass, jobject, jobject, jdouble, jobjectArray, jobjectArray);
@@ -162,7 +162,7 @@ JNIEXPORT jlong JNICALL Java_com_electraproject_core_BRCorePeerManager_createCor
 /*
  * Class:     com_breadwallet_core_BRCorePeerManager
  * Method:    installListener
- * Signature: (Lcom/breadwallet/core/BRCorePeerManager/Listener;)V
+ * Signature: (Lcom/electraproject/core/BRCorePeerManager/Listener;)V
  */
 JNIEXPORT void JNICALL Java_com_electraproject_core_BRCorePeerManager_installListener
   (JNIEnv *, jobject, jobject);

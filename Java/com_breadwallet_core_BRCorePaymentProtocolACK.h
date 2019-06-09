@@ -26,7 +26,7 @@ JNIEXPORT jbyteArray JNICALL Java_com_electraproject_core_BRCorePaymentProtocolA
 /*
  * Class:     com_breadwallet_core_BRCorePaymentProtocolACK
  * Method:    getTransactions
- * Signature: ()[Lcom/breadwallet/core/BRCoreTransaction;
+ * Signature: ()[Lcom/electraproject/core/BRCoreTransaction;
  */
 JNIEXPORT jobjectArray JNICALL Java_com_electraproject_core_BRCorePaymentProtocolACK_getTransactions
   (JNIEnv *, jobject);
@@ -34,7 +34,7 @@ JNIEXPORT jobjectArray JNICALL Java_com_electraproject_core_BRCorePaymentProtoco
 /*
  * Class:     com_breadwallet_core_BRCorePaymentProtocolACK
  * Method:    getRefundTo
- * Signature: ()[Lcom/breadwallet/core/BRCoreTransactionOutput;
+ * Signature: ()[Lcom/electraproject/core/BRCoreTransactionOutput;
  */
 JNIEXPORT jobjectArray JNICALL Java_com_electraproject_core_BRCorePaymentProtocolACK_getRefundTo
   (JNIEnv *, jobject);

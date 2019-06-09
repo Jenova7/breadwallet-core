@@ -74,7 +74,7 @@ JNIEXPORT jlong JNICALL Java_com_electraproject_core_BRCorePaymentProtocolInvoic
 /*
  * Class:     com_breadwallet_core_BRCorePaymentProtocolInvoiceRequest
  * Method:    createPaymentProtocolInvoiceRequestFull
- * Signature: (Lcom/breadwallet/core/BRCoreKey;JLjava/lang/String;[BLjava/lang/String;Ljava/lang/String;[B)J
+ * Signature: (Lcom/electraproject/core/BRCoreKey;JLjava/lang/String;[BLjava/lang/String;Ljava/lang/String;[B)J
  */
 JNIEXPORT jlong JNICALL Java_com_electraproject_core_BRCorePaymentProtocolInvoiceRequest_createPaymentProtocolInvoiceRequestFull
   (JNIEnv *, jclass, jobject, jlong, jstring, jbyteArray, jstring, jstring, jbyteArray);

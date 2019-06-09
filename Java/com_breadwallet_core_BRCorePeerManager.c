@@ -253,7 +253,7 @@ Java_com_electraproject_core_BRCorePeerManager_getDownloadPeerName
 /*
  * Class:     com_breadwallet_core_BRCorePeerManager
  * Method:    publishTransaction
- * Signature: (Lcom/breadwallet/core/BRCoreTransaction;)V
+ * Signature: (Lcom/electraproject/core/BRCoreTransaction;)V
  */
 JNIEXPORT void JNICALL
 Java_com_electraproject_core_BRCorePeerManager_publishTransactionWithListener
@@ -292,7 +292,7 @@ Java_com_electraproject_core_BRCorePeerManager_getRelayCount
 /*
  * Class:     com_breadwallet_core_BRCorePeerManager
  * Method:    testSaveBlocksCallback
- * Signature: (Z[Lcom/breadwallet/core/BRCoreMerkleBlock;)V
+ * Signature: (Z[Lcom/electraproject/core/BRCoreMerkleBlock;)V
  */
 JNIEXPORT void JNICALL Java_com_electraproject_core_BRCorePeerManager_testSaveBlocksCallback
         (JNIEnv *env, jobject thisObject, jboolean replace, jobjectArray blockObjectArray) {
@@ -322,7 +322,7 @@ JNIEXPORT void JNICALL Java_com_electraproject_core_BRCorePeerManager_testSaveBl
 /*
  * Class:     com_breadwallet_core_BRCorePeerManager
  * Method:    testSavePeersCallback
- * Signature: (Z[Lcom/breadwallet/core/BRCorePeer;)V
+ * Signature: (Z[Lcom/electraproject/core/BRCorePeer;)V
  */
 JNIEXPORT void JNICALL 
 Java_com_electraproject_core_BRCorePeerManager_testSavePeersCallback
@@ -353,7 +353,7 @@ Java_com_electraproject_core_BRCorePeerManager_testSavePeersCallback
 /*
  * Class:     com_breadwallet_core_BRCorePeerManager
  * Method:    jniCreateCorePeerManager
- * Signature: (Lcom/breadwallet/core/BRCoreChainParams;Lcom/breadwallet/core/BRCoreWallet;D[Lcom/breadwallet/core/BRCoreMerkleBlock;[Lcom/breadwallet/core/BRCorePeer;Lcom/breadwallet/core/BRCorePeerManager/Listener;)J
+ * Signature: (Lcom/electraproject/core/BRCoreChainParams;Lcom/electraproject/core/BRCoreWallet;D[Lcom/electraproject/core/BRCoreMerkleBlock;[Lcom/electraproject/core/BRCorePeer;Lcom/electraproject/core/BRCorePeerManager/Listener;)J
  */
 JNIEXPORT jlong JNICALL
 Java_com_electraproject_core_BRCorePeerManager_createCorePeerManager
@@ -413,7 +413,7 @@ Java_com_electraproject_core_BRCorePeerManager_createCorePeerManager
 /*
  * Class:     com_breadwallet_core_BRCorePeerManager
  * Method:    installListener
- * Signature: (Lcom/breadwallet/core/BRCorePeerManager/Listener;)V
+ * Signature: (Lcom/electraproject/core/BRCorePeerManager/Listener;)V
  */
 JNIEXPORT void
 JNICALL Java_com_electraproject_core_BRCorePeerManager_installListener
@@ -459,14 +459,14 @@ Java_com_electraproject_core_BRCorePeerManager_disposeNative
  */
 JNIEXPORT void JNICALL Java_com_electraproject_core_BRCorePeerManager_initializeNative
         (JNIEnv *env, jclass thisClass) {
-    blockClass = (*env)->FindClass(env, "com/breadwallet/core/BRCoreMerkleBlock");
+    blockClass = (*env)->FindClass(env, "com/electraproject/core/BRCoreMerkleBlock");
     assert (NULL != blockClass);
     blockClass = (*env)->NewGlobalRef (env, blockClass);
 
     blockConstructor = (*env)->GetMethodID(env, blockClass, "<init>", "(J)V");
     assert (NULL != blockConstructor);
 
-    peerClass = (*env)->FindClass(env, "com/breadwallet/core/BRCorePeer");
+    peerClass = (*env)->FindClass(env, "com/electraproject/core/BRCorePeer");
     assert (NULL != peerClass);
     peerClass = (*env)->NewGlobalRef (env, peerClass);
 
@@ -554,7 +554,7 @@ saveBlocks(void *info, int replace, BRMerkleBlock *blocks[], size_t blockCount) 
     jmethodID listenerMethod =
             lookupListenerMethod(env, listener,
                                  "saveBlocks",
-                                 "(Z[Lcom/breadwallet/core/BRCoreMerkleBlock;)V");
+                                 "(Z[Lcom/electraproject/core/BRCoreMerkleBlock;)V");
     assert (NULL != listenerMethod);
 
     // Create the Java BRCoreMerkleBlock array
@@ -586,7 +586,7 @@ savePeers(void *info, int replace, const BRPeer peers[], size_t count) {
     jmethodID listenerMethod =
             lookupListenerMethod(env, listener,
                                  "savePeers",
-                                 "(Z[Lcom/breadwallet/core/BRCorePeer;)V");
+                                 "(Z[Lcom/electraproject/core/BRCorePeer;)V");
     assert (NULL != listenerMethod);
 
     jobjectArray peerArray = (*env)->NewObjectArray(env, count, peerClass, 0);

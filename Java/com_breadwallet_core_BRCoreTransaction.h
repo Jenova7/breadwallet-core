@@ -28,7 +28,7 @@ JNIEXPORT jlong JNICALL Java_com_electraproject_core_BRCoreTransaction_getVersio
 /*
  * Class:     com_breadwallet_core_BRCoreTransaction
  * Method:    getInputs
- * Signature: ()[Lcom/breadwallet/core/BRCoreTransactionInput;
+ * Signature: ()[Lcom/electraproject/core/BRCoreTransactionInput;
  */
 JNIEXPORT jobjectArray JNICALL Java_com_electraproject_core_BRCoreTransaction_getInputs
   (JNIEnv *, jobject);
@@ -36,7 +36,7 @@ JNIEXPORT jobjectArray JNICALL Java_com_electraproject_core_BRCoreTransaction_ge
 /*
  * Class:     com_breadwallet_core_BRCoreTransaction
  * Method:    getOutputs
- * Signature: ()[Lcom/breadwallet/core/BRCoreTransactionOutput;
+ * Signature: ()[Lcom/electraproject/core/BRCoreTransactionOutput;
  */
 JNIEXPORT jobjectArray JNICALL Java_com_electraproject_core_BRCoreTransaction_getOutputs
   (JNIEnv *, jobject);
@@ -92,7 +92,7 @@ JNIEXPORT jbyteArray JNICALL Java_com_electraproject_core_BRCoreTransaction_seri
 /*
  * Class:     com_breadwallet_core_BRCoreTransaction
  * Method:    addInput
- * Signature: (Lcom/breadwallet/core/BRCoreTransactionInput;)V
+ * Signature: (Lcom/electraproject/core/BRCoreTransactionInput;)V
  */
 JNIEXPORT void JNICALL Java_com_electraproject_core_BRCoreTransaction_addInput
   (JNIEnv *, jobject, jobject);
@@ -100,7 +100,7 @@ JNIEXPORT void JNICALL Java_com_electraproject_core_BRCoreTransaction_addInput
 /*
  * Class:     com_breadwallet_core_BRCoreTransaction
  * Method:    addOutput
- * Signature: (Lcom/breadwallet/core/BRCoreTransactionOutput;)V
+ * Signature: (Lcom/electraproject/core/BRCoreTransactionOutput;)V
  */
 JNIEXPORT void JNICALL Java_com_electraproject_core_BRCoreTransaction_addOutput
   (JNIEnv *, jobject, jobject);
@@ -140,7 +140,7 @@ JNIEXPORT jboolean JNICALL Java_com_electraproject_core_BRCoreTransaction_isSign
 /*
  * Class:     com_breadwallet_core_BRCoreTransaction
  * Method:    sign
- * Signature: ([Lcom/breadwallet/core/BRCoreKey;I)V
+ * Signature: ([Lcom/electraproject/core/BRCoreKey;I)V
  */
 JNIEXPORT void JNICALL Java_com_electraproject_core_BRCoreTransaction_sign
   (JNIEnv *, jobject, jobjectArray, jint);

@@ -40,7 +40,7 @@ jmethodID transactionOutputConstructor;
 
 static void commonStaticInitialize(JNIEnv *env) {
     //
-    transactionClass = (*env)->FindClass(env, "com/breadwallet/core/BRCoreTransaction");
+    transactionClass = (*env)->FindClass(env, "com/electraproject/core/BRCoreTransaction");
     assert (NULL != transactionClass);
     transactionClass = (*env)->NewGlobalRef(env, transactionClass);
 
@@ -48,7 +48,7 @@ static void commonStaticInitialize(JNIEnv *env) {
     assert (NULL != transactionConstructor);
 
     //
-    transactionInputClass = (*env)->FindClass(env, "com/breadwallet/core/BRCoreTransactionInput");
+    transactionInputClass = (*env)->FindClass(env, "com/electraproject/core/BRCoreTransactionInput");
     assert (NULL != transactionInputClass);
     transactionInputClass = (*env)->NewGlobalRef(env, transactionInputClass);
 
@@ -56,7 +56,7 @@ static void commonStaticInitialize(JNIEnv *env) {
     assert (NULL != transactionInputConstructor);
 
     //
-    transactionOutputClass = (*env)->FindClass(env, "com/breadwallet/core/BRCoreTransactionOutput");
+    transactionOutputClass = (*env)->FindClass(env, "com/electraproject/core/BRCoreTransactionOutput");
     assert(NULL != transactionOutputClass);
     transactionOutputClass = (*env)->NewGlobalRef(env, transactionOutputClass);
 
@@ -86,7 +86,7 @@ Java_com_electraproject_core_BRCorePaymentProtocolRequest_getNetwork
 /*
  * Class:     com_breadwallet_core_BRCorePaymentProtocolRequest
  * Method:    getOutputs
- * Signature: ()[Lcom/breadwallet/core/BRCoreTransactionOutput;
+ * Signature: ()[Lcom/electraproject/core/BRCoreTransactionOutput;
  */
 JNIEXPORT jobjectArray JNICALL
 Java_com_electraproject_core_BRCorePaymentProtocolRequest_getOutputs
@@ -383,7 +383,7 @@ Java_com_electraproject_core_BRCorePaymentProtocolPayment_getMerchantData
 /*
  * Class:     com_breadwallet_core_BRCorePaymentProtocolPayment
  * Method:    getTransactions
- * Signature: ()[Lcom/breadwallet/core/BRCoreTransaction;
+ * Signature: ()[Lcom/electraproject/core/BRCoreTransaction;
  */
 JNIEXPORT jobjectArray JNICALL
 Java_com_electraproject_core_BRCorePaymentProtocolPayment_getTransactions
@@ -410,7 +410,7 @@ Java_com_electraproject_core_BRCorePaymentProtocolPayment_getTransactions
 /*
  * Class:     com_breadwallet_core_BRCorePaymentProtocolPayment
  * Method:    getRefundTo
- * Signature: ()[Lcom/breadwallet/core/BRCoreTransactionOutput;
+ * Signature: ()[Lcom/electraproject/core/BRCoreTransactionOutput;
  */
 JNIEXPORT jobjectArray JNICALL
 Java_com_electraproject_core_BRCorePaymentProtocolPayment_getRefundTo
@@ -540,7 +540,7 @@ Java_com_electraproject_core_BRCorePaymentProtocolACK_getMerchantData
 /*
  * Class:     com_breadwallet_core_BRCorePaymentProtocolACK
  * Method:    getTransactions
- * Signature: ()[Lcom/breadwallet/core/BRCoreTransaction;
+ * Signature: ()[Lcom/electraproject/core/BRCoreTransaction;
  */
 JNIEXPORT jobjectArray JNICALL
 Java_com_electraproject_core_BRCorePaymentProtocolACK_getTransactions
@@ -567,7 +567,7 @@ Java_com_electraproject_core_BRCorePaymentProtocolACK_getTransactions
 /*
  * Class:     com_breadwallet_core_BRCorePaymentProtocolACK
  * Method:    getRefundTo
- * Signature: ()[Lcom/breadwallet/core/BRCoreTransactionOutput;
+ * Signature: ()[Lcom/electraproject/core/BRCoreTransactionOutput;
  */
 JNIEXPORT jobjectArray JNICALL
 Java_com_electraproject_core_BRCorePaymentProtocolACK_getRefundTo
@@ -782,7 +782,7 @@ Java_com_electraproject_core_BRCorePaymentProtocolInvoiceRequest_createPaymentPr
 /*
  * Class:     com_breadwallet_core_BRCorePaymentProtocolInvoiceRequest
  * Method:    createPaymentProtocolInvoiceRequestFull
- * Signature: (Lcom/breadwallet/core/BRCoreKey;JLjava/lang/String;[BLjava/lang/String;Ljava/lang/String;[B)J
+ * Signature: (Lcom/electraproject/core/BRCoreKey;JLjava/lang/String;[BLjava/lang/String;Ljava/lang/String;[B)J
  */
 JNIEXPORT jlong JNICALL Java_com_electraproject_core_BRCorePaymentProtocolInvoiceRequest_createPaymentProtocolInvoiceRequestFull
         (JNIEnv *env, jclass thisClass,

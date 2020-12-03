@@ -49,7 +49,7 @@ typedef struct {
 } BRChainParams;
 
 static const char *BRMainNetDNSSeeds[] = {
-    "seed01.electraproject.org", "seed02.electraproject.org", "seed03.electraproject.org", "seed04.electraproject.org", "seed05.electraproject.org", "seed06.electraproject.org", "seed07.electraproject.org", "seed08.electraproject.org", NULL
+    "51.38.83.67", "167.114.145.147", "79.137.39.240", NULL
 };
 
 static const char *BRTestNetDNSSeeds[] = {
@@ -87,8 +87,11 @@ static const BRCheckPoint BRMainNetCheckpoints[] = {
     { 520000, uint256("f4b1fd9948df5c7adb785657cebf35cc23acd24878595285e01dd6967ba44216"), 1573322530, 0x194a2d5b },
     { 575000, uint256("91a6069df63fde8e5330bd84c0363abe688f4617ed6d50d93d56c156b05cb76d"), 1576992081, 0x19459b28 },
     { 600000, uint256("6d0478d3bda0737760fb0e9c821c57527e142264dbf3739233e6d0fe304e5e1c"), 1578659794, 0x193eb1bb },
-    { 645000, uint256("53c4deeef20ed0af390dafbda677061990da797d688ab29e266defabdbd35a79"), 1581661184, 0x1926ae21 }
-	//{ 700000,
+    { 645000, uint256("53c4deeef20ed0af390dafbda677061990da797d688ab29e266defabdbd35a79"), 1581661184, 0x1926ae21 },
+    { 739642, uint256("51aec86a270ebead84bd55637eef24bfcf6fe32964a9210d67733d51b0c909d3"), 1587975995, 0x19460923 },
+    { 1012100, uint256("970621533f14eb1453e36b9862f0b766b4a3e0a98486bd6de2a7d265a22bcb18"), 1606133749, 0x194a2cce },
+    { 1012101, uint256("8302cbdc1d3e828047fda722abf761c07576ee4db4ae2825826c35d011025744"), 1606480037, 0x1e0fffff },
+    { 1012400, uint256("00853a95f049b96112c1154297c88d6b20d1a0b8050fe712054fbfaa775e6ea0"), 1606514130, 0x1d36a340 }
 };
 
 static const BRCheckPoint BRTestNetCheckpoints[] = {

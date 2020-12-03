@@ -31,7 +31,7 @@
 #include <limits.h>
 #include <time.h>
 
-#define TX_VERSION           0x00000007
+#define TX_VERSION           0x00000008
 #define TX_LOCKTIME          0x00000000
 #define SIGHASH_ALL          0x01 // default, sign all of the outputs
 #define SIGHASH_NONE         0x02 // sign none of the outputs, I don't care where the bitcoins go

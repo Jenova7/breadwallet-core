@@ -49,7 +49,7 @@ typedef struct {
 } BRChainParams;
 
 static const char *BRMainNetDNSSeeds[] = {
-    "51.38.83.67", "167.114.145.147", "79.137.39.240", NULL
+    "seed01.electraprotocol.network", "seed02.electraprotocol.network", "seed03.electraprotocol.network", "seed04.electraprotocol.network", "seed05.electraprotocol.network", "seed06.electraprotocol.network", "seed07.electraprotocol.network", "seed08.electraprotocol.network", NULL
 };
 
 static const char *BRTestNetDNSSeeds[] = {
